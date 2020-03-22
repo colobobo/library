@@ -1,0 +1,35 @@
+{
+  "name": "@types/fast-not-fat",
+  "version": "1.0.0",
+  "description": "Types of Fast Not Fat application",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare" : "yarn build",
+    "prepublishOnly" : "yarn lint",
+    "preversion" : "yarn lint",
+    "version" : "yarn format && git add -A src",
+    "postversion" : "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fast-Not-Fat/types.git"
+  },
+  "files": ["lib/**/*"],
+  "keywords": [],
+  "author": "Fast Not Fat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fast-Not-Fat/types/issues"
+  },
+  "homepage": "https://github.com/Fast-Not-Fat/types#readme",
+  "dependencies": {
+    "prettier": "^2.0.1",
+    "tslint": "^6.1.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
+  }
+}
