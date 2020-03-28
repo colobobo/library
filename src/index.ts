@@ -1,3 +1,2 @@
-export { Events, EventsRoom, EventsExample } from './events';
-
-export { PayloadSocket } from './payloads';
+export { Events, RoomEvents } from './events';
+export { RoomPayloads } from './payloads';
