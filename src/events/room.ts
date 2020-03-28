@@ -1,4 +1,4 @@
-export enum RoomEvents {
+export enum EventsRoom {
   create = "room:create",
   createSuccess = "room:create:success",
   createError = "room:create:error",

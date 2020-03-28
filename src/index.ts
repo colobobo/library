@@ -1,2 +1,2 @@
-export { Events, RoomEvents } from './events';
-export { RoomPayloads } from './payloads';
+export { Events, EventsRoom } from './events';
+export { PayloadsRoom } from './payloads';

@@ -1,6 +1,6 @@
 import { PayloadSocket } from "./index";
 
-export module RoomPayloads {
+export module PayloadsRoom {
   export type Create = {
     width: number,
     height: number
