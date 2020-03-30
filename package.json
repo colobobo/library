@@ -1,5 +1,5 @@
 {
-  "name": "@types/fast-not-fat",
+  "name": "fast-not-fat",
   "version": "1.0.0",
   "description": "Types of Fast Not Fat application",
   "main": "lib/index.js",
