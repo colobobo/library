@@ -17,6 +17,7 @@ export module PayloadsRoom {
   }>
 
   export type Join = {
+    id: string,
     width: number,
     height: number
   }
