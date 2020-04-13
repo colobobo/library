@@ -1,4 +1,4 @@
-import { PayloadSocket } from "./index";
+import { PayloadSocket, PayloadSocketError } from "./index";
 
 export module PayloadsRoom {
   export type Create = {
@@ -10,11 +10,7 @@ export module PayloadsRoom {
     id: string
   }>
 
-  export type CreateError = PayloadSocket<{
-    code: number,
-    data: null,
-    message: string,
-  }>
+  export type CreateError = PayloadSocketError
 
   export type Join = {
     id: string,
@@ -26,9 +22,5 @@ export module PayloadsRoom {
     id: string
   }>
 
-  export type JoinError = PayloadSocket<{
-    code: number,
-    data: null,
-    message: string,
-  }>
+  export type JoinError = PayloadSocketError
 }
