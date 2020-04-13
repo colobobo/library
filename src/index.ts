@@ -1,3 +1,3 @@
-export { Events, EventsRoom } from './events';
-export { PayloadsRoom } from './payloads';
-export { Device } from './types'
+export { Events, EventsArea, EventsGame, EventsRoom } from './events';
+export { PayloadsArea, PayloadsRoom } from './payloads';
+export { AreaDevice, Device } from './types'
