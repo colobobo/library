@@ -1,5 +1,6 @@
 export enum EventsGame {
-  create = "game:create",
-  createSuccess = "room:create:success",
-  createError = "room:create:error"
+  start = "game:start",
+  startSuccess = "game:start:success",
+  startError = "game:start:error",
+  tick = "game:tick"
 }

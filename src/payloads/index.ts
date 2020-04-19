@@ -6,4 +6,5 @@ export type PayloadSocketError<T = null> = PayloadSocket<T> & {
 }
 
 export { PayloadsArea } from './area'
+export { PayloadsGame } from './game'
 export { PayloadsRoom } from './room'
