@@ -5,6 +5,6 @@ export module PayloadsArea {
   export type Update = PayloadSocket<{
     width: Device["width"];
     height: Device["height"];
-    devices: Map<string, AreaDevice>
+    devices: {[devideId: string] : AreaDevice}
   }>
 }
