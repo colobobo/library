@@ -1,8 +1,9 @@
-import { PayloadSocket } from "./index";
+import { PayloadSocket } from './index';
 
 export module PayloadsGame {
   export type Tick = PayloadSocket<{
-    x: number,
-    y: number
-  }>
+    x: number;
+    y: number;
+    tick: number;
+  }>;
 }
