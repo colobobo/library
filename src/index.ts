@@ -1,3 +1,7 @@
-export { Events, EventsArea, EventsGame, EventsRoom } from './events';
-export * from './payloads';
-export * from './types'
+import * as events from './events';
+
+export type Events = events.area | events.game | events.room
+
+export * as events from './events';
+export * as payloads from './payloads';
+export * from './types';

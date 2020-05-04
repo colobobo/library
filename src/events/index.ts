@@ -1,6 +1,3 @@
-import { EventsArea } from "./area";
-import { EventsGame } from "./game";
-import { EventsRoom } from "./room";
-
-export { EventsArea, EventsGame, EventsRoom }
-export type Events = EventsArea | EventsGame | EventsRoom
+export { EventsArea as area } from './area';
+export { EventsGame as game } from './game';
+export { EventsRoom as room } from './room';
