@@ -6,4 +6,9 @@ export module PayloadsGame {
     y: number;
     tick: number;
   }>;
+
+  export type PositionUpdate = PayloadSocket<{
+    x: number;
+    y: number;
+  }>;
 }
