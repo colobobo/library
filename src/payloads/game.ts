@@ -5,10 +5,12 @@ export module PayloadsGame {
     x: number;
     y: number;
     tick: number;
+    objects: { [id: string]: { x: number; y: number } };
   }>;
 
   export type PositionUpdate = PayloadSocket<{
     x: number;
     y: number;
+    id: string;
   }>;
 }
