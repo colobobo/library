@@ -8,9 +8,9 @@ export module PayloadsGame {
     objects: { [id: string]: { x: number; y: number } };
   }>;
 
-  export type PositionUpdate = PayloadSocket<{
+  export type PositionUpdate = {
     x: number;
     y: number;
     id: string;
-  }>;
+  };
 }
