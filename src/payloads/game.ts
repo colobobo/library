@@ -1,9 +1,10 @@
 import { PayloadSocket } from './index';
+import { GameObjects } from '../types';
 
 export module PayloadsGame {
   export type Tick = PayloadSocket<{
     tick: number;
-    objects: { [id: string]: { x: number; y: number } };
+    objects: GameObjects;
   }>;
 
   export type PositionUpdate = {
