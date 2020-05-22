@@ -1,7 +1,7 @@
 {
-  "name": "fast-not-fat",
+  "name": "@colobobo/library",
   "version": "1.0.0",
-  "description": "Types of Fast Not Fat application",
+  "description": "Library of Colobobo application for client and server",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -17,18 +17,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fast-Not-Fat/types.git"
+    "url": "git+https://github.com/colobobo/library.git"
   },
   "files": [
     "lib/**/*"
   ],
   "keywords": [],
-  "author": "Fast Not Fat",
+  "author": "colobobo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Fast-Not-Fat/types/issues"
+    "url": "https://github.com/colobobo/library/issues"
   },
-  "homepage": "https://github.com/Fast-Not-Fat/types#readme",
+  "homepage": "https://github.com/colobobo/library#readme",
   "dependencies": {
     "prettier": "^2.0.1",
     "tslint": "^6.1.0",
