@@ -1,3 +1,5 @@
+import { RoutesTypes } from '../enums';
+
 export type Device = {
   width: number;
   height: number;
@@ -19,3 +21,7 @@ export type GameObject = {
 export type GameObjects = {
   [id: string]: GameObject;
 };
+
+export type Route = {
+  type: RoutesTypes
+}
