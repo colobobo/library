@@ -1,7 +1,10 @@
 export enum EventsRound {
   init = 'round:init',
+  playerReady = 'round:player:ready',
   start = 'round:start',
   tick = 'round:tick',
+  fail = 'round:fail',
+  success = 'round:success',
   memberSpawned = 'round:member:spawned',
   memberDragStart = 'round:member:drag:start',
   memberDragEnd = 'round:member:drag:end',
@@ -9,6 +12,4 @@ export enum EventsRound {
   memberTrapped = 'round:member:trapped',
   memberDropped = 'round:member:dropped',
   memberArrived = 'round:member:arrived',
-  fail = 'round:fail',
-  success = 'round:success',
 }
