@@ -2,6 +2,9 @@ export enum EventsGame {
   start = 'game:start',
   startSuccess = 'game:start:success',
   startError = 'game:start:error',
-  tick = 'game:tick',
-  positionUpdate = 'game:position:update',
+  sceneTypeUpdate = 'game:scene-type:update',
+  statusUpdate = 'game:status:update',
+  statusUpdateSuccess = 'game:status:update:success',
+  statusUpdateError = 'game:status:update:error',
+  end = 'game:end',
 }
