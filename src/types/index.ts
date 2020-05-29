@@ -8,14 +8,21 @@ export type AreaDevice = Device & {
   position: number;
 };
 
-export type GameObject = {
-  x: number;
-  y: number;
+export type Member = {
+  position: {
+    x: number;
+    y: number;
+  };
+  velocity: {
+    x: number;
+    y: number;
+  };
   width: number;
   height: number;
+  manager: string;
   color?: string;
 };
 
-export type GameObjects = {
-  [id: string]: GameObject;
+export type Members = {
+  [id: string]: Member;
 };
