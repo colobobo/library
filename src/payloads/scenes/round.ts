@@ -1,8 +1,21 @@
 import { PayloadSocket } from '../index';
 import { Members } from '../../types';
+import { player, World } from "../../enums";
+
+type PlayerRole = {
+  role: player.Role,
+  properties: { interval: number } | null | null
+}
 
 export module PayloadsRound {
-  export type Init = PayloadSocket<{}>;
+  export type Init = PayloadSocket<{
+    id: number,
+    world: World,
+    duration: number,
+    playerRoles: {
+      [playerId: string]: PlayerRole,
+    }
+  }>;
 
   export type PlayerReady = {};
 
