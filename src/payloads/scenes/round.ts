@@ -4,12 +4,13 @@ import { World } from '../../enums';
 
 export module PayloadsRound {
   export type Init = PayloadSocket<{
-    id: number,
-    world: World,
-    duration: number,
+    id: number;
+    world: World;
+    duration: number;
+    tick: number;
     playerRoles: {
-      [playerId: string]: PlayerRole,
-    }
+      [playerId: string]: PlayerRole;
+    };
   }>;
 
   export type PlayerReady = {};
