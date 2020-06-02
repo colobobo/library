@@ -1,4 +1,10 @@
+import { member } from "../enums";
+
 export type Member = {
+  isDrag: boolean;
+  manager: string;
+  status: member.Status;
+  skin: member.Skins;
   position: {
     x: number;
     y: number;
@@ -7,10 +13,6 @@ export type Member = {
     x: number;
     y: number;
   };
-  width: number;
-  height: number;
-  manager: string;
-  color?: string;
 };
 
 export type Members = {

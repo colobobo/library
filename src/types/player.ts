@@ -4,3 +4,7 @@ export type PlayerRole = {
   role: player.Role,
   properties: { interval: number } | null | null
 }
+
+export type PlayerRoles = {
+  [playerId: string]: PlayerRole;
+}
