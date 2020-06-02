@@ -4,6 +4,7 @@ export module PayloadsRoom {
   export type Create = {
     width: number;
     height: number;
+    isAdmin?: boolean;
   };
 
   export type CreateSuccess = PayloadSocket<{
@@ -17,11 +18,13 @@ export module PayloadsRoom {
     id: string;
     width: number;
     height: number;
+    adminIndex?: string;
   };
 
   export type JoinSuccess = PayloadSocket<{
     id: string;
     deviceId: string;
+    isCreator: boolean;
   }>;
 
   export type JoinError = PayloadSocketError;
