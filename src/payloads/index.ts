@@ -5,6 +5,7 @@ export type PayloadSocketError<T = null> = PayloadSocket<T> & {
   message: string;
 };
 
+export { PayloadsAdmin as admin } from './admin';
 export { PayloadsArea as area } from './area';
 export { PayloadsGame as game } from './game';
 export { PayloadsRoom as room } from './room';

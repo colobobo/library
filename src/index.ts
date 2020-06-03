@@ -1,6 +1,6 @@
 import * as events from './events';
 
-export type Events = events.area | events.game | events.room | events.round | events.transition
+export type Events = events.area | events.game | events.room | events.round | events.transition | events.admin
 export * as enums from './enums';
 export * as events from './events';
 export * as payloads from './payloads';

@@ -1,3 +1,4 @@
+export { EventsAdmin as admin } from './admin';
 export { EventsArea as area } from './area';
 export { EventsGame as game } from './game';
 export { EventsPlayer as player } from './player';
