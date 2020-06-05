@@ -24,7 +24,9 @@ export module PayloadsRound {
 
   export type Success = PayloadSocket<{}>;
 
-  export type MemberSpawned = {};
+  export type MemberSpawned = {
+    memberId: string;
+  };
 
   export type MemberDragStart = {
     memberId: string;
@@ -45,9 +47,15 @@ export module PayloadsRound {
     };
   };
 
-  export type MemberTrapped = {};
+  export type MemberTrapped = {
+    memberId: string;
+  };
 
-  export type MemberDropped = {};
+  export type MemberDropped = {
+    memberId: string;
+  };
 
-  export type MemberArrived = {};
+  export type MemberArrived = {
+    memberId: string;
+  };
 }
