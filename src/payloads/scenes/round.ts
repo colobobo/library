@@ -1,5 +1,5 @@
 import { PayloadSocket } from '../index';
-import { Members, PlayerRoles } from '../../types';
+import { Members, PlayerRoles, round } from '../../types';
 import { World } from '../../enums';
 
 export module PayloadsRound {
@@ -20,9 +20,9 @@ export module PayloadsRound {
     members: Members;
   }>;
 
-  export type Fail = PayloadSocket<{}>;
+  export type Fail = PayloadSocket<round.EndInformation>;
 
-  export type Success = PayloadSocket<{}>;
+  export type Success = PayloadSocket<round.EndInformation>;
 
   export type MemberSpawned = {
     memberId: string;
