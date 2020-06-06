@@ -9,7 +9,7 @@ export module PayloadsRoom {
 
   export type CreateSuccess = PayloadSocket<{
     id: string;
-    deviceId: string;
+    playerId: string;
   }>;
 
   export type CreateError = PayloadSocketError;
@@ -23,7 +23,7 @@ export module PayloadsRoom {
 
   export type JoinSuccess = PayloadSocket<{
     id: string;
-    deviceId: string;
+    playerId: string;
     isCreator: boolean;
   }>;
 
