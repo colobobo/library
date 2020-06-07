@@ -7,9 +7,11 @@ export module PayloadsRound {
     id: number;
     world: World;
     duration: number;
-    tick: number;
+    lives: number;
     members: Members;
     playerRoles: PlayerRoles;
+    score: number;
+    tick: number;
   }>;
 
   export type PlayerReady = {};

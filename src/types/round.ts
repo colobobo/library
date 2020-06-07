@@ -7,7 +7,7 @@ export type Information = {
   elapsedTime: number;
   members: Members;
   score: number;
-  life: number;
+  lives: number;
   world: enums.World;
 };
 
