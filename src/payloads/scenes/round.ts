@@ -1,11 +1,12 @@
-import { PayloadSocket } from '../index';
+import {PayloadSocket, PayloadSocketError} from '../index';
 import { Members, PlayerRoles, round } from '../../types';
-import { World } from '../../enums';
+import * as enums from '../../enums';
+import {game} from "../../enums";
 
 export module PayloadsRound {
   export type Init = PayloadSocket<{
     id: number;
-    world: World;
+    world: enums.World;
     duration: number;
     lives: number;
     members: Members;
@@ -25,6 +26,12 @@ export module PayloadsRound {
   export type Fail = PayloadSocket<round.EndInformation>;
 
   export type Success = PayloadSocket<round.EndInformation>;
+
+  export type StatusUpdate = { status: enums.round.Status };
+
+  export type StatusUpdateSuccess = PayloadSocket<{ status: enums.round.Status }>;
+
+  export type StatusUpdateError = PayloadSocketError;
 
   export type MemberSpawned = {
     memberId: string;
