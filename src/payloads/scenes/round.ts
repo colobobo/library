@@ -17,7 +17,9 @@ export module PayloadsRound {
 
   export type PlayerReady = {};
 
-  export type Start = PayloadSocket<null>;
+  export type Start = PayloadSocket<{
+    endRoundTimeStamp: number;
+  }>;
 
   export type Tick = PayloadSocket<{
     members: Members;
@@ -29,7 +31,10 @@ export module PayloadsRound {
 
   export type StatusUpdate = { status: enums.round.Status };
 
-  export type StatusUpdateSuccess = PayloadSocket<{ status: enums.round.Status }>;
+  export type StatusUpdateSuccess = PayloadSocket<{
+    status: enums.round.Status;
+    endRoundTimeStamp: number;
+  }>;
 
   export type StatusUpdateError = PayloadSocketError;
 
