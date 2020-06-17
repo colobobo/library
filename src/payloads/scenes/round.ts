@@ -17,9 +17,9 @@ export module PayloadsRound {
 
   export type PlayerReady = {};
 
-  export type Start = PayloadSocket<{
+  export type Start = {
     endRoundTimeStamp: number;
-  }>;
+  };
 
   export type Tick = PayloadSocket<{
     members: Members;
