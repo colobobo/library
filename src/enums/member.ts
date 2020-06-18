@@ -1,7 +1,8 @@
 export enum Status {
-  waiting = 'waiting',
   active = 'active',
   arrived = 'arrived',
+  dropped = 'dropped',
+  waiting = 'waiting',
 }
 
 export enum Skins {

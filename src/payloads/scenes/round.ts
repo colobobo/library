@@ -25,9 +25,7 @@ export module PayloadsRound {
     members: Members;
   }>;
 
-  export type Fail = PayloadSocket<round.EndInformation>;
-
-  export type Success = PayloadSocket<round.EndInformation>;
+  export type End = PayloadSocket<round.EndInformation>;
 
   export type StatusUpdate = { status: enums.round.Status };
 

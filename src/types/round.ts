@@ -12,5 +12,6 @@ export type Information = {
 };
 
 export type EndInformation = Information & {
-  endType: enums.game.EndType;
+  endType: enums.round.EndType;
+  failCause: enums.round.FailCauses | null;
 }

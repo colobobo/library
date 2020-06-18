@@ -7,3 +7,13 @@ export enum Status {
   play = 'play',
   pause = 'pause'
 }
+
+export enum EndType {
+  success = 'success',
+  fail = 'fail',
+}
+
+export enum FailCauses {
+  timer = 'timer',
+  memberDropped = 'memberDropped'
+}
