@@ -1,3 +1,4 @@
+import { game } from '../types';
 import { PayloadSocket, PayloadSocketError } from './index';
 
 export module PayloadsRoom {
@@ -10,6 +11,7 @@ export module PayloadsRoom {
   export type CreateSuccess = PayloadSocket<{
     id: string;
     playerId: string;
+    players: game.Properties['players']
   }>;
 
   export type CreateError = PayloadSocketError;
