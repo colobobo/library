@@ -1,28 +1,30 @@
 import { World } from "./world";
 
-enum Jungle {
+export enum Jungle {
   liana = 'liana',
   bubblePlant = 'bubble-plant',
   chameleon = 'chameleon',
 }
 
-enum River {
+export enum River {
   liana = 'liana',
   bubblePlant = 'bubble-plant',
   fish = 'fish',
 }
 
-enum Desert {
+export enum Desert {
   fire = 'fire',
   snake = 'snake',
   meerkat = 'meerkat',
 }
 
-enum Mountain {
+export enum Mountain {
   geyser = 'geyser',
   penguin = 'penguin',
   stalactite = 'stalactite',
 }
+
+export type All = Jungle | River | Desert | Mountain
 
 export const Traps = {
   [World.jungle]: Jungle,
