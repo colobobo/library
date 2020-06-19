@@ -1,13 +1,18 @@
-import { player, round } from '../enums';
+import { player, round, traps } from '../enums';
 
 
 export type PlayerRolePropertiesPlateform = {
   direction: round.Direction
 }
 
+export type PlayerRolePropertiesTrap = {
+  type: traps.All,
+  interval: number
+}
+
 export type PlayerRole = {
   role: player.Role;
-  properties: { interval: number } | PlayerRolePropertiesPlateform | {};
+  properties: PlayerRolePropertiesTrap | PlayerRolePropertiesPlateform;
 };
 
 export type PlayerRoles = {
