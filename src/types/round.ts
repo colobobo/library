@@ -11,7 +11,19 @@ export type Information = {
   world: enums.World;
 };
 
+export type ScoreDetail = {
+  value: number;
+  points: number;
+}
+
+export type ScoreDetails = {
+  arrivedMembers: ScoreDetail;
+  traps: ScoreDetail;
+  remainingTime?: ScoreDetail;
+}
+
 export type EndInformation = Information & {
   endType: enums.round.EndType;
   failCause: enums.round.FailCauses | null;
+  scoreDetails: ScoreDetails;
 }
