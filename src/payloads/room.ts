@@ -25,8 +25,9 @@ export module PayloadsRoom {
 
   export type JoinSuccess = PayloadSocket<{
     id: string;
-    playerId: string;
     isCreator: boolean;
+    playerId: string;
+    players: game.Properties['players']
   }>;
 
   export type JoinError = PayloadSocketError;
