@@ -19,6 +19,7 @@ export type ScoreDetail = {
 export type ScoreDetails = {
   total: number;
   details: {
+    [key: string]: any;
     arrivedMembers: ScoreDetail;
     traps: ScoreDetail;
     remainingTime?: ScoreDetail;
