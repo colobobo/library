@@ -9,5 +9,7 @@ export module PayloadsTransition {
 
   export type Start = PayloadSocket<{}>;
 
+  export type NextSuccess = PayloadSocket<{}>;
+
   export type Ended = {};
 }
