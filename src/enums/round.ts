@@ -17,3 +17,9 @@ export enum FailCauses {
   timer = 'timer',
   memberDropped = 'memberDropped'
 }
+
+export enum ScoreDetails {
+  arrivedMembers = 'arrivedMembers',
+  traps = 'traps',
+  remainingTime = 'remainingTime'
+}

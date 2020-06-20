@@ -20,9 +20,9 @@ export type ScoreDetails = {
   total: number;
   details: {
     [key: string]: any;
-    arrivedMembers: ScoreDetail;
-    traps: ScoreDetail;
-    remainingTime?: ScoreDetail;
+    [enums.round.ScoreDetails.arrivedMembers]: ScoreDetail;
+    [enums.round.ScoreDetails.traps]: ScoreDetail;
+    [enums.round.ScoreDetails.remainingTime]?: ScoreDetail;
   }
 }
 
