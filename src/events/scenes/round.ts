@@ -10,6 +10,7 @@ export enum EventsRound {
   memberSpawned = 'round:member:spawned',
   memberDragStart = 'round:member:drag:start',
   memberDragEnd = 'round:member:drag:end',
+  memberUpdateManager = 'round:member:update:manager',
   memberMove = 'round:member:move',
   memberTrapped = 'round:member:trapped',
   memberDropped = 'round:member:dropped',

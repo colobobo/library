@@ -1,7 +1,6 @@
 import {PayloadSocket, PayloadSocketError} from '../index';
 import { Members, PlayerRoles, round } from '../../types';
 import * as enums from '../../enums';
-import {game} from "../../enums";
 
 export module PayloadsRound {
   export type Init = PayloadSocket<{
@@ -45,7 +44,14 @@ export module PayloadsRound {
     playerId: string;
   };
 
-  export type MemberDragEnd = {};
+  export type MemberDragEnd = {
+    memberId: string;
+  };
+
+  export type MemberUpdateManager = {
+    memberId: string;
+    playerId: string;
+  };
 
   export type MemberMove = {
     id: string;
