@@ -6,7 +6,7 @@ export type Information = {
   duration: number;
   elapsedTime: number;
   members: Members;
-  score: number;
+  gameScore: number;
   lives: number;
   world: enums.World;
 };
@@ -17,6 +17,7 @@ export type ScoreDetail = {
 }
 
 export type ScoreDetails = {
+  total: number;
   arrivedMembers: ScoreDetail;
   traps: ScoreDetail;
   remainingTime?: ScoreDetail;
@@ -25,5 +26,5 @@ export type ScoreDetails = {
 export type EndInformation = Information & {
   endType: enums.round.EndType;
   failCause: enums.round.FailCauses | null;
-  scoreDetails: ScoreDetails;
+  roundScoreDetails: ScoreDetails;
 }
