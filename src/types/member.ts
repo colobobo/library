@@ -1,7 +1,7 @@
 import { member } from "../enums";
 
 export type Member = {
-  isDrag: boolean;
+  isDragged: boolean;
   manager: string;
   status: member.Status;
   skin: member.Skins;
