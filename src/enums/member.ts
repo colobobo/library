@@ -6,9 +6,9 @@ export enum Status {
 }
 
 export enum Skins {
-  slobbery = 'slobbery',
-  lifeguard = 'lifeguard',
+  fatty = 'fatty',
+  scout = 'scout',
   injured = 'injured',
   rebel = 'rebel',
-  glasses = 'glasses',
+  intellectual = 'intellectual',
 }
