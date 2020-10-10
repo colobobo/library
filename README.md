@@ -20,9 +20,9 @@
   <a href="https://nodejs.org/">Node</a>
 </p>
 
-# Colobobo - Client
+# Colobobo - Library
 
-This repository is the library part of Colobobo project. The others parts :
+This repository is the library part of Colobobo project. The other parts :
 - [Client](https://github.com/colobobo/client)
 - [Server](https://github.com/colobobo/server) 
 
